@@ -12,6 +12,9 @@
 		3DDE09431FD9879A00CE7201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDE09411FD9879A00CE7201 /* Main.storyboard */; };
 		3DDE09451FD9879A00CE7201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDE09441FD9879A00CE7201 /* Assets.xcassets */; };
 		3DDE09481FD9879A00CE7201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDE09461FD9879A00CE7201 /* LaunchScreen.storyboard */; };
+		3DDE09501FD98A5F00CE7201 /* TituloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE094F1FD98A5F00CE7201 /* TituloViewController.swift */; };
+		3DDE09521FD98A9C00CE7201 /* Urna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE09511FD98A9C00CE7201 /* Urna.swift */; };
+		3DDE09541FD98AD400CE7201 /* VotarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE09531FD98AD400CE7201 /* VotarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3DDE09441FD9879A00CE7201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DDE09471FD9879A00CE7201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DDE09491FD9879A00CE7201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DDE094F1FD98A5F00CE7201 /* TituloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloViewController.swift; sourceTree = "<group>"; };
+		3DDE09511FD98A9C00CE7201 /* Urna.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urna.swift; sourceTree = "<group>"; };
+		3DDE09531FD98AD400CE7201 /* VotarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		3DDE093C1FD9879A00CE7201 /* urna-distribuida-app */ = {
 			isa = PBXGroup;
 			children = (
+				3DDE09411FD9879A00CE7201 /* Main.storyboard */,
+				3DDE09461FD9879A00CE7201 /* LaunchScreen.storyboard */,
 				3DDE093D1FD9879A00CE7201 /* AppDelegate.swift */,
 				3DDE093F1FD9879A00CE7201 /* ViewController.swift */,
-				3DDE09411FD9879A00CE7201 /* Main.storyboard */,
-				3DDE09441FD9879A00CE7201 /* Assets.xcassets */,
-				3DDE09461FD9879A00CE7201 /* LaunchScreen.storyboard */,
+				3DDE09531FD98AD400CE7201 /* VotarViewController.swift */,
+				3DDE094F1FD98A5F00CE7201 /* TituloViewController.swift */,
+				3DDE09511FD98A9C00CE7201 /* Urna.swift */,
 				3DDE09491FD9879A00CE7201 /* Info.plist */,
+				3DDE09441FD9879A00CE7201 /* Assets.xcassets */,
 			);
 			path = "urna-distribuida-app";
 			sourceTree = "<group>";
@@ -137,7 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DDE09401FD9879A00CE7201 /* ViewController.swift in Sources */,
+				3DDE09501FD98A5F00CE7201 /* TituloViewController.swift in Sources */,
 				3DDE093E1FD9879A00CE7201 /* AppDelegate.swift in Sources */,
+				3DDE09521FD98A9C00CE7201 /* Urna.swift in Sources */,
+				3DDE09541FD98AD400CE7201 /* VotarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SMNA83A6;
 				INFOPLIST_FILE = "urna-distribuida-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lauraabitante.urna-distribuida-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SMNA83A6;
 				INFOPLIST_FILE = "urna-distribuida-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lauraabitante.urna-distribuida-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
