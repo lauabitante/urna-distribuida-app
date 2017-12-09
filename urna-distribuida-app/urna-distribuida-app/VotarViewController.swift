@@ -16,7 +16,6 @@ class VotarViewController: UIViewController {
     var ipAddress: CFString!
     
     override func viewDidLoad() {
-        urna = Urna(ipAddress, porta: 8004)
         urna.delegate = self
         super.viewDidLoad()
     }
@@ -46,4 +45,3 @@ extension VotarViewController: UrnaDelegate {
         present(alert, animated: true)
     }
 }
-

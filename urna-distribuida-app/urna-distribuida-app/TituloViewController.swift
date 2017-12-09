@@ -11,6 +11,7 @@ import UIKit
 class TituloViewController: UIViewController {
     
     var urna: Urna!
+    var urnaVoto: Urna!
     var titulo = ""
     
     @IBOutlet weak var txtTituloEleitor: UITextField!
@@ -18,6 +19,7 @@ class TituloViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         urna.delegate = self
+        urnaVoto = Urna(urna.endereco, porta: 8004)
     }
     
     @IBAction func btnEntrarTouched() {
@@ -29,7 +31,7 @@ class TituloViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let votarVC = segue.destination as? VotarViewController {
-            votarVC.urna = urna
+            votarVC.urna = urnaVoto
             votarVC.titulo = titulo
             votarVC.ipAddress = urna.endereco
         }
@@ -43,7 +45,7 @@ extension TituloViewController: UrnaDelegate {
         if mensagem.contains("OK") {
             performSegue(withIdentifier: "votar", sender: self)
         } else {
-            let alert = UIAlertController(title: "Ops!", message: "Título não encontrado", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Ops!", message: "Título não encontrado.", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .destructive)
             alert.addAction(action)
             present(alert, animated: true)
@@ -51,4 +53,3 @@ extension TituloViewController: UrnaDelegate {
         }
     }
 }
-
