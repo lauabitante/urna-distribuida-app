@@ -6,3 +6,4 @@ This is the client App for a Voting simulator using [Streams](https://developer.
 
 The server code can be found in [this repository](https://github.com/lauabitante/urna-distribuida)
 
+[Screenshot](https://i.imgur.com/s8IUzeN.png)
